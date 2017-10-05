@@ -26,6 +26,7 @@
 - [#8776](https://github.com/influxdata/influxdb/pull/8776): Initial implementation of explain plan.
 - [#8791](https://github.com/influxdata/influxdb/pull/8791): Include the number of scanned cached values in the iterator cost.
 - [#8784](https://github.com/influxdata/influxdb/pull/8784): Add support for the Prometheus remote read and write APIs.
+- [#8923](https://github.com/influxdata/influxdb/pull/8923): Enable uint64 support.
 
 ### Bugfixes
 
