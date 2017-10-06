@@ -16,9 +16,10 @@ github.com/paulbellamy/ratecounter 5a11f585a31379765c190c033b6ad39956584447
 github.com/peterh/liner 88609521dc4b6c858fd4c98b628147da928ce4ac
 github.com/philhofer/fwd 1612a298117663d7bc9a760ae20d383413859798
 github.com/retailnext/hllpp 38a7bb71b483e855d35010808143beaf05b67f9d
-github.com/spaolacci/murmur3 0d12bf811670bf6a1a63828dfbd003eded177fce
+github.com/stretchr/testify 890a5c3458b43e6104ff5da8dfa139d013d77544
 github.com/tinylib/msgp ad0ff2e232ad2e37faf67087fb24bf8d04a8ce20
 github.com/uber-go/atomic 74ca5ec650841aee9f289dce76e928313a37cbc6
 github.com/uber-go/zap fbae0281ffd546fa6d1959fec6075ac5da7fb577
+github.com/xlab/treeprint 06dfc6fa17cdde904617990a0c2d89e3e332dbb3
 golang.org/x/crypto 9477e0b78b9ac3d0b03822fd95422e2fe07627cd
 golang.org/x/sys 062cd7e4e68206d8bab9b18396626e855c992658

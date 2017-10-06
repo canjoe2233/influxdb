@@ -9,6 +9,8 @@ import (
 	"testing"
 	"time"
 
+	"context"
+
 	"github.com/davecgh/go-spew/spew"
 	"github.com/influxdata/influxdb/influxql"
 	"github.com/influxdata/influxdb/pkg/deep"
@@ -1553,12 +1555,12 @@ func TestIterator_EncodeDecode(t *testing.T) {
 
 // IteratorCreator is a mockable implementation of SelectStatementExecutor.IteratorCreator.
 type IteratorCreator struct {
-	CreateIteratorFn  func(m *influxql.Measurement, opt query.IteratorOptions) (query.Iterator, error)
+	CreateIteratorFn  func(ctx context.Context, m *influxql.Measurement, opt query.IteratorOptions) (query.Iterator, error)
 	FieldDimensionsFn func(m *influxql.Measurement) (fields map[string]influxql.DataType, dimensions map[string]struct{}, err error)
 }
 
-func (ic *IteratorCreator) CreateIterator(m *influxql.Measurement, opt query.IteratorOptions) (query.Iterator, error) {
-	return ic.CreateIteratorFn(m, opt)
+func (ic *IteratorCreator) CreateIterator(ctx context.Context, m *influxql.Measurement, opt query.IteratorOptions) (query.Iterator, error) {
+	return ic.CreateIteratorFn(ctx, m, opt)
 }
 
 func (ic *IteratorCreator) FieldDimensions(m *influxql.Measurement) (fields map[string]influxql.DataType, dimensions map[string]struct{}, err error) {
